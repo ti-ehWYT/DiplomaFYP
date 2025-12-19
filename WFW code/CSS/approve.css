@@ -1,0 +1,206 @@
+/** @format */
+.id {
+    width: 1%;
+  }
+  .name {
+    width: 7%;
+  }
+  .email {
+    width: 10%;
+  }
+
+  .status {
+    width: 7%;
+  }
+  
+  .actions {
+    width: 10%;
+  }
+  
+  .actions a {
+    color: blue;
+    text-decoration: none;
+  }
+  
+  .error {
+    color: rgb(255, 0, 0);
+    font-size: larger;
+  }
+  /** @format */
+
+main {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+
+  
+  .line-break {
+    width: 100%;
+  }
+  
+  tr {
+    width: 100%;
+  }
+  
+  th,
+  td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid black;
+  }
+  
+
+/** @format */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /*--- Body ---*/
+  body {
+    background-image:url('https://cdn.asiatatler.com/asiatatler/i/my/2021/06/30114047-white-flag-movement_cover_1920x1200.jpg');
+    margin: 5vh auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  
+
+  /*--- Navigation Bar ---*/
+  nav {
+    flex-basis: 100%;
+  }
+  
+  nav ul li {
+    list-style-type: none;
+    background-color: white;
+    float: right;
+    text-align: center;
+  }
+  
+  nav ul li a {
+    background-color: grey;
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+  }
+  
+  nav ul li a:hover {
+    background-color: red;
+    color: white;
+  }
+  
+  /*--- Main ---*/
+  main {
+    flex-basis: 100%;
+    outline: 3px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    background: #90CAF9;
+  }
+  
+  h1{
+    color: White;
+    font-size: 40px;
+    text-shadow: -4px 0 black, 0 4px black, 4px 0 black, 0 -4px black;
+  }
+  
+  /*if want child elements to refer to parent width, don't use flex*/
+  #searchForm {
+    margin-top: 2vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  input {
+    color: rgb(0, 0, 0);
+    background: #05386b;
+    
+  }
+  
+  /*To margin auto inputs, NEED display block and a specified width. In this case refered from parent*/
+  input[type="search"] {
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    width: 50%;
+    border: none;
+    padding: 10px;
+  }
+  input[type="search"]::placeholder {
+    color: rgb(60, 84, 157);
+    font-weight: bold;
+  }
+  
+  input[type="submit"] {
+    display: inline-block;
+    margin-left: 1%;
+    border: none;
+    padding: 7px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  #displayTable {
+    width: 350%;
+    margin: 3vh auto;
+  }
+  
+  table {
+    border: 2px solid black;
+    background-color: aliceblue;
+  
+    display: block;
+    border-collapse: collapse;
+  
+    width: 90%;
+    height: 60vh;
+    margin:auto;
+  
+    overflow-y: scroll;
+    overflow-x: scroll;
+  }
+  
+  tr:hover {
+    background-color: rgb(194, 201, 208);
+    transition: background-color 0.5s ease;
+  }
+  
+  tr.clicked {
+    background: yellow;
+  }
+  
+  td,
+  th {
+    padding: 15px;
+  }
+  
+  th {
+    background: #1565C0;
+    color:white;
+  }
+  
+  tr.data {
+    animation: testing 1s ease-in;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes testing {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+    

@@ -1,0 +1,33 @@
+body{
+    background-image:url('https://cdn.asiatatler.com/asiatatler/i/my/2021/06/30114047-white-flag-movement_cover_1920x1200.jpg');
+	font-family:  'Poppins', sans-serif;
+    height:80%;
+  
+  flex-wrap: wrap;
+}
+.infocontain{    
+    padding: 25px 65px 15px 85px;
+    background-color:white ;
+    margin:12px auto;
+    width: 500px;
+    border-radius: 20px;
+  }
+
+h3 {
+	margin-bottom: 40px;
+}
+#backButton {
+    font-size: 1.2em;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #05386b;
+    border-radius: 5px;
+    position: sticky;
+    top: 0%;
+    align-self: flex-start;
+  }
+
+#backButton:hover{
+    background-color: red;
+}

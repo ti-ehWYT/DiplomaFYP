@@ -1,0 +1,232 @@
+/* Custom Fonts */
+@font-face {
+  font-family: oswald;
+  src: url(../fonts/Oswald-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: zen;
+  src: url(../fonts/ZenKakuGothicAntique-Regular.ttf);
+}
+
+.container {
+  padding-top: 7%;
+  padding-bottom: 30%;
+  background-color: lightskyblue;
+  height: auto;
+}
+#intro p {
+  width: 50%;
+  text-align: left;
+  float: left;
+  height: auto;
+  font-family: zen;
+  font-size: 1.3vw;
+  padding-left: 25px;
+}
+
+#intro img {
+  width: 45vw;
+  float: right;
+  height: auto;
+  padding-right: 10px;
+}
+
+.word {
+  font-family: zen;
+  padding: 0 2em;
+}
+
+.purpose h1{
+  text-align: left;
+  font-family: zen;
+  padding: 0 1em;
+}
+
+.word p {
+  font-size: 140%;
+  text-align: left;
+}
+.content {
+  max-width: 800px;
+  margin: auto;
+  padding: 30px;
+}
+
+.column {
+  float: left;
+  width: 30%;
+  padding: 5px;
+}
+
+.function {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+.image {
+  display: block;
+  width: 200%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 200%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #5ac4f5;
+}
+
+.function:hover .overlay {
+  opacity: 0.8;
+}
+
+.text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: oswald;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.register {
+  max-width: 1300px;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  color: black;box-shadow: 0 0 20px #9AC4F8;
+}
+
+a.button {
+  background: #89BBFE;
+  border: 1px solid #6F8AB7;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 30px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  text-decoration: none;
+  font-family: oswald;
+}
+
+.button:hover,
+.button:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #ff4742;
+}
+
+.button:active {
+  opacity: 0.5;
+}
+
+.foodbank{
+  margin-top:100px;
+ font-family: zen;
+}
+
+.foodbank p{
+  font-size: 140%
+}
+
+.fbcontent{
+  max-width: 1000px;
+  margin: auto;
+  padding: 10px;
+}
+
+.column2 {
+  float: left;
+  padding: 5px;
+  width:49%;
+}
+
+/* Clear floats after image containers */
+.row2::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/*reponsive for half screen max-width 800px*/
+@media only screen and (max-width: 850px) {
+  .container {
+    padding-top: 210px;
+    padding-bottom: 32vw;
+  }
+  #intro p {
+    font-size: 1.5vw;
+    padding-top: 0;
+  }
+  .column2 {
+    width: 80%;
+    margin-left: 80px;
+  }
+}
+
+
+
+
+/*reponsive for mobile phone devices, smartphone max-width 480px*/
+@media only screen and (max-width: 480px) {
+  .container {
+    padding-top: 60%;
+    padding-bottom: 139%;
+  }
+  .purpose h1{
+
+    font-size: 150%;
+    text-decoration: overline underline;
+  }
+  #intro p {
+    padding: 0;
+    width: 100%;
+    font-size: 80%;
+  }
+  .word h1 {
+    font-size: 150%;
+    text-decoration: overline underline;
+  }
+  #intro img {
+    width: 100%;
+    padding-right: 0%;
+  }
+  .word p {
+    font-size: 90%;
+  }
+  .column {
+    width: 100%;
+  }
+  .column2 {
+    width: 100%;
+    margin-left:-7px;
+  }
+}

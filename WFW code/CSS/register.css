@@ -1,0 +1,125 @@
+
+
+.content {
+  padding: 5vw;
+}
+
+.cont {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  background-color: #c5c4c4;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  padding: 3em;
+}
+
+.error {
+  background: #F2DEDE;
+  color: #A94442;
+  padding: 30px;
+  width: 95%;
+  border-radius: 5px;
+  text-align: center;
+  margin: 20px auto;
+  font-size: 20px;
+}
+
+.form-cont {
+  display: block;
+  width: 80%;
+  margin: auto;
+  padding: 5em;
+  background: rgb(255, 255, 255);
+  border-radius: 20px;
+}
+
+fieldset {
+  padding: 3em;
+  color: #000000;
+  border: 0.09em solid #000000;
+  border-radius: 0.25em;
+}
+
+
+
+
+.cont textarea {
+  display: block;
+  width: 80%;
+  height: 9.5em;
+  padding: 0.75em 1.25em;
+  margin: 1em auto;
+  box-sizing: border-box;
+  border: 0.06em solid #2b2b2b;
+  border-radius: 0.25em;
+  resize: none;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border: 0.18em solid #555;
+}
+
+.container {
+  width: 50%;
+}
+#map {
+  height: 50vh;
+  margin-bottom: 10px;
+  display: none;
+}
+
+#locationList .card {
+  padding: 10px;
+}
+
+#toast-container {
+  top: 50%;
+  bottom: unset;
+}
+.toast {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.btn i {
+  font-size: 1rem;
+  margin-right: 2px;
+}
+
+.id{
+  color: red;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 80%;
+    max-width: 800px;
+  }
+}
+
+/* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+@media only screen and (max-width: 480px) {
+  .bgheader {
+    font-size: 10px;
+    padding-top: 200px;
+    padding-bottom: 10px;
+  }
+  .cont{
+    padding:0%;
+  }
+  .form-cont {
+    display: block;
+    width: 100%;
+    margin: auto;
+    padding: 0%;
+    background: rgb(255, 255, 255);
+  }
+  fieldset {
+    padding: 0;
+    color: #000000;
+    border: 0.09em solid #000000;
+    border-radius: 0.25em;
+  }
+}

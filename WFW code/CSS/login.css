@@ -1,0 +1,42 @@
+@font-face {
+    font-family: redressed;
+    src: url(../fonts/Redressed-Regular.ttf);
+  }
+#frm{  
+    border: solid gray 1px;  
+    width:23%;  
+    border-radius: 2px;  
+    margin: 170px auto;  
+    background: white;  
+    padding: 50px;  
+    text-align: center;
+}  
+#btn{  
+    color: #fff;  
+    background: #337ab7;  
+    padding: 6px;  
+    margin-top: 10%;  
+    
+    margin-bottom: 10%;  
+    width:60%;
+}  
+#btn:hover{  
+    color: #fff;  
+    background: #5bb733;  
+} 
+body{
+    background-image:url('https://cdn.asiatatler.com/asiatatler/i/my/2021/06/30114047-white-flag-movement_cover_1920x1200.jpg');
+    height:50%
+    }
+#fill input{
+    width:60%; 
+}
+
+h1{
+    font-family:redressed;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+
+
